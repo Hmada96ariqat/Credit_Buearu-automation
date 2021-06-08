@@ -60,4 +60,5 @@ WebUI.click(findTestObject('Object Repository/GeneratePage/Page_Generate Page - 
 
 WebUI.click(findTestObject('Object Repository/GeneratePage/Page_Generate Page - Credit Bureau/input_Provider comments_actionIndex'))
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/ViewData'))
+
