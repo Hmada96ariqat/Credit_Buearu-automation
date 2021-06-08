@@ -68,8 +68,68 @@ class LoginStep {
 	}
 	@Then('User will navigate to HomePage')
 	def navigateToHomePage() {
-		WebUI.closeBrowser()
 	}
+
+	@Given('Click on Exclude Customers tap')
+	def clickOnExclude() {
+		WebUI.click(findTestObject('Object Repository/HomePage/Page_Generate Page - Credit Bureau/Excluded Customers Tap'))
+	}
+
+
+
+	@And("Click on 'Add Customer'")
+	def newCus() {
+		WebUI.click(findTestObject('Object Repository/HomePage/Page_Excluded Customers - Credit Bureau/Add Customer'))
+
+	}
+
+	@And('Fill new value')
+	def newValue() {
+		WebUI.sendKeys(findTestObject('Object Repository/HomePage/Page_Excluded Customers - Credit Bureau/input_Customers_search'), '002405577')
+		WebUI.click(findTestObject('Object Repository/HomePage/Page_Excluded Customers - Credit Bureau/a_ROMANUS ANDOR BEATRICE (002405577)'))
+		WebUI.click(findTestObject('Object Repository/HomePage/Page_Excluded Customers - Credit Bureau/button_Save'))
+	}
+
+	@Then('Navigate to Generate tap')
+	def generateTap() {
+		WebUI.click(findTestObject('Object Repository/GeneratePage/Page_Generate Page - Credit Bureau/Generate Tap'))
+
+	}
+
+	@And('Fill the blanks')
+	def fillBlanks() {
+
+		WebUI.sendKeys(findTestObject('Object Repository/GeneratePage/Page_Generate Page - Credit Bureau/input_Provider Code'), 'QA_Test')
+
+		WebUI.setText(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/input_Day Date_DayDate'), '11/04/2016')
+
+		WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/input_Day Date_DayDateCLICK'))
+		
+		WebUI.scrollToElement(findTestObject('GeneratePage/Page_Generate Page - Credit Bureau/input_Iteration_IsTest'), 1)
+		
+//		WebUI.sendKeys(findTestObject('Object Repository/GeneratePage/Page_Generate Page - Credit Bureau/input_Iteration_IterationNumber'), '1')
+
+	}
+
+	@And('Check The Cheques check box and the check Rules check box')
+	def checkBoxes() {
+		WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/IsTest'))
+
+	}
+
+	@Then("Click On Generate 'Button'")
+	def genButton() {
+
+		WebUI.click(findTestObject('Object Repository/GeneratePage/Page_Generate Page - Credit Bureau/input_Provider comments_actionIndex'))
+
+	}
+
+	@Then('Click on view data')
+	def viewData() {
+		WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/ViewData'))
+
+	}
+
 
 }
 

@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://bor4dev/CreditBureau_Setup/')
@@ -46,12 +45,9 @@ WebUI.click(findTestObject('Object Repository/GeneratePage/Page_Generate Page - 
 WebUI.sendKeys(findTestObject('Object Repository/GeneratePage/Page_Generate Page - Credit Bureau/input_Provider Code'), 
     'QA_Test')
 
-
-
 WebUI.setText(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/input_Day Date_DayDate'), '11/04/2016')
 
-WebUI.sendKeys(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/input_Day Date_DayDate'), Keys.chord(
-        Keys.ENTER))
+WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/input_Day Date_DayDateCLICK'))
 
 WebUI.sendKeys(findTestObject('Object Repository/GeneratePage/Page_Generate Page - Credit Bureau/input_Iteration_IterationNumber'), 
     '1')
@@ -61,4 +57,6 @@ WebUI.click(findTestObject('Object Repository/GeneratePage/Page_Generate Page - 
 WebUI.click(findTestObject('Object Repository/GeneratePage/Page_Generate Page - Credit Bureau/input_Provider comments_actionIndex'))
 
 WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/ViewData'))
+
+WebUI.scrollToElement(findTestObject('GeneratePage/Page_Generate Page - Credit Bureau/input_Iteration_IsTest'), 1)
 

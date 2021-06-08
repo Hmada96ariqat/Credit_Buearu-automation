@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "F5948C7CCC94A83DD9094F688880309A",
+  "keywordFileContentHash": "86F6B8E11C1C47E9AE2B270FF6B7D429",
   "keywordClasses": [
     {
       "name": "Exclude",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
