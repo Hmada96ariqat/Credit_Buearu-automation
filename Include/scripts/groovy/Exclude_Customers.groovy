@@ -43,7 +43,7 @@ import cucumber.api.java.en.When
 
 
 
-class LoginStep {
+class Exclude_Customers {
 
 	@Given('User navigates to login page')
 	def navigateToLoginPage() {
@@ -80,7 +80,6 @@ class LoginStep {
 	@And("Click on 'Add Customer'")
 	def newCus() {
 		WebUI.click(findTestObject('Object Repository/HomePage/Page_Excluded Customers - Credit Bureau/Add Customer'))
-
 	}
 
 	@And('Fill new value')
@@ -93,7 +92,6 @@ class LoginStep {
 	@Then('Navigate to Generate tap')
 	def generateTap() {
 		WebUI.click(findTestObject('Object Repository/GeneratePage/Page_Generate Page - Credit Bureau/Generate Tap'))
-
 	}
 
 	@And('Fill the blanks')
@@ -103,33 +101,57 @@ class LoginStep {
 
 		WebUI.setText(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/input_Day Date_DayDate'), '11/04/2016')
 
-		WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/input_Day Date_DayDateCLICK'))
-		
-		WebUI.scrollToElement(findTestObject('GeneratePage/Page_Generate Page - Credit Bureau/input_Iteration_IsTest'), 1)
-		
-//		WebUI.sendKeys(findTestObject('Object Repository/GeneratePage/Page_Generate Page - Credit Bureau/input_Iteration_IterationNumber'), '1')
+		WebUI.click(findTestObject('Object Repository/GeneratePage/Page_Generate Page - Credit Bureau/input_Provider Code'))
 
+		WebUI.scrollToElement(findTestObject('GeneratePage/Page_Generate Page - Credit Bureau/input_Iteration_IsTest'), 1)
+
+		WebUI.sendKeys(findTestObject('Object Repository/GeneratePage/Page_Generate Page - Credit Bureau/input_Iteration_IterationNumber'), '1')
 	}
 
 	@And('Check The Cheques check box and the check Rules check box')
 	def checkBoxes() {
 		WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/IsTest'))
-
 	}
 
 	@Then("Click On Generate 'Button'")
 	def genButton() {
 
 		WebUI.click(findTestObject('Object Repository/GeneratePage/Page_Generate Page - Credit Bureau/input_Provider comments_actionIndex'))
-
+		WebUI.waitForPageLoad(5, FailureHandling.STOP_ON_FAILURE)
+	}
+	@And('Go back to generate page')
+	def goBack() {
+		WebUI.back()
 	}
 
-	@Then('Click on view data')
-	def viewData() {
+	@And('Pick contract')
+	def pickContract() {
+		WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/input_Contract_GenerateType'))
+		WebUI.waitForPageLoad(5, FailureHandling.STOP_ON_FAILURE)
+	}
+
+	@And('Pick cheques')
+	def pickCheaques() {
+		WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/input_Cheques_GenerateType'))
+		WebUI.waitForPageLoad(5, FailureHandling.STOP_ON_FAILURE)
+	}
+
+	@And('Click on view data')
+	def clickViewData() {
 		WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/ViewData'))
-
 	}
 
-
+	@Then('Close the browser')
+	def closeBrowser(){
+		WebUI.closeBrowser()
+	}
 }
+
+
+
+
+
+
+
+
 

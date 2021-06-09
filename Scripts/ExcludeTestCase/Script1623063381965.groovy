@@ -60,3 +60,11 @@ WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau
 
 WebUI.scrollToElement(findTestObject('GeneratePage/Page_Generate Page - Credit Bureau/input_Iteration_IsTest'), 1)
 
+
+
+
+//
+
+
+
+
