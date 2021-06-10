@@ -9,20 +9,19 @@ Feature: Credit Bureau
       | username      | password                 |
       | administrator | /5S6MFFLcE4mlsixtc6/Tg== |
 
-  Scenario: Exclude Customers page
-    Given Click on Exclude Customers tap
-    And Click on 'Add Customer'
-    And Fill new value
-    Then Navigate to Generate tap
+  Scenario: Download reports
     And Fill the blanks
     And Check The Test check
+    And Uncheck the Check Rules check
     Then Click On Generate 'Button'
+    Then Click on Download Report
     And Go back to generate page
     And Pick contract
     Then Click On Generate 'Button'
+    Then Click on Download Report
     And Go back to generate page
     And Pick cheques
     Then Click On Generate 'Button'
-    And Click on view data
+    Then Click on Download Report
     And Go back to generate page
     Then Close the browser

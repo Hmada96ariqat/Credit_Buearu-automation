@@ -9,11 +9,7 @@ Feature: Credit Bureau
       | username      | password                 |
       | administrator | /5S6MFFLcE4mlsixtc6/Tg== |
 
-  Scenario: Exclude Customers page
-    Given Click on Exclude Customers tap
-    And Click on 'Add Customer'
-    And Fill new value
-    Then Navigate to Generate tap
+  Scenario: Generate reports
     And Fill the blanks
     And Check The Test check
     Then Click On Generate 'Button'

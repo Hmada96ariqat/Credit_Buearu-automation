@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Contract_GenerateType</name>
+   <name>input_Cheques_GenerateType</name>
    <tag></tag>
-   <elementGuidId>ea4ae54f-7a3d-4683-bade-1e726ef74411</elementGuidId>
+   <elementGuidId>d8762535-0271-4704-aaa6-6a519c6d338c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#Contract</value>
+         <value>#Cheques</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='Contract']</value>
+         <value>//input[@id='Cheques']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,21 +24,21 @@
       <value>input</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>Contract</value>
+      <value>Cheques</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
       <value>GenerateType</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
@@ -49,34 +49,34 @@
       <matchCondition>equals</matchCondition>
       <name>value</name>
       <type>Main</type>
-      <value>2</value>
+      <value>3</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;Contract&quot;)</value>
+      <value>id(&quot;Cheques&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='Contract']</value>
+      <value>//input[@id='Cheques']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='body']/section/form/div/div/div[5]/div/div/div[2]/div[2]/label/input</value>
+      <value>//div[@id='body']/section/form/div/div/div[5]/div/div/div[2]/div[3]/label/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/label/input</value>
+      <value>//div[3]/label/input</value>
    </webElementXpaths>
 </WebElementEntity>

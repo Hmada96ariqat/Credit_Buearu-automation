@@ -3,7 +3,7 @@
    <description></description>
    <name>input_Contract_GenerateType</name>
    <tag></tag>
-   <elementGuidId>ea4ae54f-7a3d-4683-bade-1e726ef74411</elementGuidId>
+   <elementGuidId>cf82706b-5044-4dd3-bf99-3c97d76c18fa</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -24,21 +24,21 @@
       <value>input</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>Contract</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
       <value>GenerateType</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
@@ -59,7 +59,7 @@
       <value>id(&quot;Contract&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>

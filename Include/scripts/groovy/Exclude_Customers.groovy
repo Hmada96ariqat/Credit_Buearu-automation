@@ -108,7 +108,7 @@ class Exclude_Customers {
 		WebUI.sendKeys(findTestObject('Object Repository/GeneratePage/Page_Generate Page - Credit Bureau/input_Iteration_IterationNumber'), '1')
 	}
 
-	@And('Check The Cheques check box and the check Rules check box')
+	@And('Check The Test check')
 	def checkBoxes() {
 		WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/IsTest'))
 	}
@@ -145,6 +145,30 @@ class Exclude_Customers {
 	def closeBrowser(){
 		WebUI.closeBrowser()
 	}
+
+	@Given('Click on Arabic version button')
+	def arabicButton() {
+
+		WebUI.click(findTestObject('Object Repository/Arabic Version/Page_Generate Page - Credit Bureau/a_Arabic'))
+	}
+
+	@And('Uncheck the Check Rules check')
+	def uncheck() {
+		WebUI.click(findTestObject('Object Repository/Arabic Version/Page_Generate Page - Credit Bureau/CheckRules'))
+	}
+	
+	@Then('Click on Download Report')
+	def downloadReport() {
+		
+		WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/a_Download Report'))
+	}
+	
+	@Given('Click on History Tap')
+	def historyTap() {
+		WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/a_History (current)'))
+		WebUI.scrollToPosition(75, 90)
+	}
+	
 }
 
 
