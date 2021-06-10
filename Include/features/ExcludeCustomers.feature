@@ -25,4 +25,6 @@ Feature: Credit Bureau
     Then Click On Generate 'Button'
     And Click on view data
     And Go back to generate page
+    Given Click on Exclude Customers tap
+    Then Delete the added record
     Then Close the browser

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>ExcludeTestCase</name>
+   <name>ArabicVersion</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>fefb92b4-2f7b-4201-9c8e-1a239b79cf6e</testCaseGuid>
+   <testCaseGuid>ebeef58a-23c5-4eb7-801a-a63861708890</testCaseGuid>
 </TestCaseEntity>

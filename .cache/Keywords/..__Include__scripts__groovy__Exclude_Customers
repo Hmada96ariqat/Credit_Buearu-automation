@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "6BDB65A30B9DAD05200DD58B1ABCABA5",
+  "keywordFileContentHash": "ACEF7C20B0BAE76253E2E53979880D0D",
   "keywordClasses": [
     {
       "name": "Exclude_Customers",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

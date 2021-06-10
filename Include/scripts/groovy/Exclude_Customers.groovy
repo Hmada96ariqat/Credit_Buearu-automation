@@ -156,19 +156,24 @@ class Exclude_Customers {
 	def uncheck() {
 		WebUI.click(findTestObject('Object Repository/Arabic Version/Page_Generate Page - Credit Bureau/CheckRules'))
 	}
-	
+
 	@Then('Click on Download Report')
 	def downloadReport() {
-		
+
 		WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/a_Download Report'))
 	}
-	
+
 	@Given('Click on History Tap')
 	def historyTap() {
 		WebUI.click(findTestObject('Object Repository/Page_Generate Page - Credit Bureau/a_History (current)'))
 		WebUI.scrollToPosition(75, 90)
 	}
-	
+	@Then('Delete the added record')
+	def deleteRecord() {
+		WebUI.click(findTestObject('Object Repository/Page_Excluded Customers - Credit Bureau/a_Delete'))
+		WebUI.click(findTestObject('Object Repository/Page_Excluded Customers - Credit Bureau/button_Yes'))
+		WebUI.click(findTestObject('Object Repository/Page_Excluded Customers - Credit Bureau/button_Okay'))
+	}
 }
 
 
